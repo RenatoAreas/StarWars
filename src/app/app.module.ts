@@ -15,9 +15,11 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
+import {MatTableModule} from '@angular/material/table';
+import { MenuComponent } from './components/menu/menu/menu.component';
 
 @NgModule({
-  declarations: [AppComponent, FilmesComponent, NavesComponent, HomeComponent],
+  declarations: [AppComponent, FilmesComponent, NavesComponent, HomeComponent, MenuComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -30,7 +32,8 @@ import {MatIconModule} from '@angular/material/icon';
     MatSidenavModule,
     MatListModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent],
